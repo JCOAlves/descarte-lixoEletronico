@@ -1,1 +1,82 @@
 /*Arquivo estilistico do site*/
+
+nav {
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #6DBB33;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1fdcf;
+}
+
+.mapa {
+    border: solid 1px #6DBB33;
+    border-radius: 10px;
+    min-width: 500px;
+    max-width: 680px;
+}
+
+img {
+    margin-left: 25px;
+}
+
+.linkPaginas {
+    display: flex;
+}
+
+
+main {
+    text-align: center;
+    padding: 30px;
+    max-width: 1250px;
+    margin: 0px auto;
+}
+
+.caixa1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 30px auto;
+    
+}
+
+@media (max-width: 600px) {
+    .caixa1 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+.sessoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    height: max-content;
+    margin: 0px auto;
+}
+
+section {
+    border: solid 1px #6DBB33;
+    border-radius: 10px;
+    min-height: 300px;
+    max-height: 600px;
+    min-width: 500px;
+    padding: 10px;
+    
+
+}
+
+footer {
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: #6DBB33;
+    background-color: #f1fdcf;
+    height: 90px;
+    padding: 18px;
+    
+}
