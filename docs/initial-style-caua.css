@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul, li {
+    list-style: none;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilização do Header */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #FFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #53872B;
+}
+
+.principal-nav ul {
+    display: flex;
+    gap: 72px;
+    font-size: 20px;
+}
+
+.principal-nav a {
+    position: relative;
+    color: #454545;
+    text-decoration: none;
+}
+
+.principal-nav a:hover {
+    color: #53872B;
+    transition: width 0.3s ease;
+}
+
+.principal-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #53872B;
+    transition: width 0.3s ease;
+}
+
+.principal-nav a:hover::after {
+    width: 100%;
+}
+
+/* Estilização da Section 1 */
+
+#section-1 {
+    min-height: 80vh;
+
+    background-image: url("./assets/images/lixo-eletro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.overlay {
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.principal-title {
+    text-align: center;
+    max-width: 900px;
+    padding: 0 2rem;
+}
+
+.principal-title h1 {
+    display: inline-block;
+
+    background-color: #004d33;
+    color: #6fb02f;
+
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 800;
+
+    padding: 2rem 4rem;
+    border-radius: 8px;
+
+    margin-bottom: 2rem;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.principal-title h2 {
+    color: white;
+
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    margin-bottom: 1rem;
+}
+
+.principal-title p {
+    font-family: 'Merriweather sans';
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.principal-title span {
+    color: #6fb02f;
+}
+
+/* Estilização da Section 2 */
+
+#section-2 {
+    margin: 4rem 2rem;
+    padding: 1rem;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+
+.subsection.pt-1 {
+    margin-bottom: 3rem;
+}
+
+#section-2 .subsection .items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#section-2 .subsection .items .item {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+
+    padding: 1.5rem 2rem;
+    min-height: 180px;
+
+    border-right: 1px solid #e5e5e5;
+}
+
+#section-2 .subsection .items .item:last-child {
+    border-right: none;
+}
+
+#section-2 .subsection .items .item img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+
+    margin-bottom: 1.5rem;
+}
+
+#section-2 .subsection .items .item span {
+    max-width: 220px;
+
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.subsection.pt-1 .section-title { 
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.section-title {
+    display: flex;
+    gap: 8px;
+    color: #53872B;
+    font-size: 2rem;
+    font-weight: 700;
+
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.subsection p {
+    color: #444;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.subsection.pt-2 .section-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.subsection.pt-2 .section-title::before {
+    content: "";
+    width: 40px;
+    height: 20px;
+    background-color: #53872B;
+}
+
+.warn {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 4;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: #eef5ef;
+}
+
+.warn-icon {
+    font-size: 2rem;
+    color: #0b4a35;
+}
+
+.warn strong {
+    color: #0b4a35;
+    font-size: 1.8rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.warn p {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Estilização da Section 2 */
+
+#section-3 {
+    margin: 4rem 2rem;
+    padding: 1rem;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+
+#section-3 .items {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#section-3 .item {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    position: relative;
+}
+
+#section-3 .item h3{
+    color: #004d26;
+}
+
+#section-3 .item .step {
+    position: absolute;
+
+    top: 0;
+    left: 15%;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #004d26;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    z-index: 2;
+}
