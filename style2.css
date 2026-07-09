@@ -1,0 +1,228 @@
+/*Arquivo estilistico do site*/
+
+nav {
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1fdcf;
+}
+
+#logoIF {
+    width: 50px;
+    height: 50px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    margin-left: 25px;
+}
+
+.cabecalho p {
+    font-size: 28px;
+    margin-top: 10px;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.linkPaginas {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.linkPaginas span {
+    color: black;
+}
+
+main {
+    margin: 0px auto;
+}
+
+.sessoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: max-content;
+    margin: 0px auto;
+}
+
+section {
+    min-width: 300px;
+    min-height: 400px;
+    width: 100%;
+    padding: 48px 35px;
+}
+
+#secao1 {
+    background-image: url("./docs/imgs/img1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#secao1 h1 {
+    color: #6DBB33;
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.5);
+    background-color: #033726;
+    padding: 30px;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#secao1 p {
+    color: white;
+    text-shadow: 2px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.subtitulo {
+    font-size: 40px;
+}
+
+.paragrafo {
+    font-size: 22px;
+}
+
+.textoVerde {
+    color: #6DBB33;
+}
+
+.caixa1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 0px auto;
+    max-width: 750px;
+    padding: 30px 0px;
+
+}
+
+#secao2 {
+    background-color: #F7F7F7;
+}
+
+#secao2 h2 {
+    color: #6DBB33;
+}
+
+#secao3 {
+    background-color: #033726;
+}
+
+
+#secao3 h2 {
+    color: #6DBB33;
+}
+
+#secao4 {
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#secao4 h2 {
+    color: #6DBB33;
+}
+
+.videoGestao {
+    border: solid 2px #6DBB33;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 700px;
+    height: 100%;
+    min-height: 400px;
+    max-height: 500px;
+}
+
+.mapa {
+    border: solid 2px #6DBB33;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 700px;
+    height: 100%;
+    min-height: 400px;
+    max-height: 500px;
+}
+
+.caixa2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px
+    
+}
+
+.caixaTexto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.caixa2 .caixaTexto{
+    max-width: 800px;
+}
+
+footer {
+    background-color: #084420;
+    min-height: 300px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+footer p{
+    color: white;
+}
+
+@media (max-width: 850px){
+    .caixa2 {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    nav {
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .linkPaginas span {
+        color: black;
+        font-size: 88%;
+    }
+
+    #secao1 h1 {
+        font-size: 40px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
