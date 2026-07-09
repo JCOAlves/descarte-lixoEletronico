@@ -13,18 +13,6 @@ nav {
     height: 50px;
 }
 
-.mapa {
-    border: solid 2px #6DBB33;
-    border-radius: 10px;
-    width: 100%;
-    min-width: 300px;
-    max-width: 650px;
-    height: 100%;
-    min-height: 400px;
-    max-height: 500px;
-    margin-top: 10px;
-}
-
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -142,17 +130,42 @@ section {
 
 #secao4 {
     background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #secao4 h2 {
     color: #6DBB33;
 }
 
+.videoGestao {
+    border: solid 2px #6DBB33;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 700px;
+    height: 100%;
+    min-height: 400px;
+    max-height: 500px;
+}
+
+.mapa {
+    border: solid 2px #6DBB33;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 700px;
+    height: 100%;
+    min-height: 400px;
+    max-height: 500px;
+}
+
 .caixa2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px
     
 }
 
@@ -180,6 +193,14 @@ footer p{
     color: white;
 }
 
+@media (max-width: 850px){
+    .caixa2 {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+}
+
 @media (max-width: 750px) {
     nav {
         align-content: center;
@@ -198,12 +219,6 @@ footer p{
 
     .subtitulo {
         font-size: 30px;
-    }
-
-    .caixa2 {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
     }
 
     footer{
